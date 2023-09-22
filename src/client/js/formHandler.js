@@ -14,7 +14,8 @@ function handleSubmit(event) {
 
     console.log("Form Submitted")
 
-    const apiEndpoint = `http://localhost:8081/sentiment`;
+    const apiEndpoint = 'https://nlp-express-app.onrender.com/sentiment'; // for render deployment change the url 
+    // const apiEndpoint = `http://localhost:8081/sentiment`; // for local test 
 
     fetch(apiEndpoint, {
         method: 'POST',

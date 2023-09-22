@@ -10,7 +10,7 @@ const app = express();
 
 const corsOptions = {
     origin: function (origin, callback) {
-        const allowedOrigins = ['http://localhost:8081'];
+        const allowedOrigins = ['http://localhost:8081', 'https://nlp-express-app.onrender.com'];
         if (allowedOrigins.includes(origin) || !origin) {
             callback(null, true);
         } else {
